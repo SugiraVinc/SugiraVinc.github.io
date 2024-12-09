@@ -1,0 +1,21 @@
+source "https://rubygems.org"
+
+# Use GitHub Pages gem to manage all dependencies
+gem "github-pages", group: :jekyll_plugins
+
+# Plugins (add any additional plugins you need here)
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.6"
+end
+
+# Platform-specific gems for Windows
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", "~> 1.2"
+  gem "tzinfo-data"
+end
+
+# Boost performance for file watching on Windows
+gem "wdm", "~> 0.1.0", platforms: [:mingw, :x64_mingw, :mswin]
+
+# GFM (GitHub Flavored Markdown) support for kramdown
+gem "kramdown-parser-gfm"
