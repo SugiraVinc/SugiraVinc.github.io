@@ -1,1 +1,0 @@
----\nlayout: post\ntitle: My First Post\n---\nHello, world!
